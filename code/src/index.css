@@ -124,13 +124,15 @@ border-bottom: #F1F1F1 1px solid;
 .grid {
   width: 100%;
   display: flex;
+  flex-flow: wrap row;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .box {
   width: 488px;
   height: 255px;
-  border: #F1F1F1 1px solid;
+  border: lightgray 1px solid;
   display: flex;
   margin-top: 20px;
 }
@@ -147,10 +149,27 @@ border-bottom: #F1F1F1 1px solid;
   transform: translateX(-50%);
 }
 .textBox {
-   width: 288px;
-   padding: 16px;
+  width: 288px;
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
 }
 .box p {
   color: #6B6B6B;
   font-size: 11px
+}
+.writerBox {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+.writerBox img {
+  border-radius: 50%;
+}
+.writerBox p {
+  line-height: 0.5;
+  padding-left: 5px;
 }
